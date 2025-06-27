@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    
+    /* Mobile Menu Transitions */
+    #mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, opacity 0.2s ease;
+      opacity: 0;
+    }
+    
+    #mobile-menu.show {
+      max-height: 500px; /* Adjust based on your content height */
+      opacity: 1;
+      transition: max-height 0.3s ease-in, opacity 0.3s ease;
+    }
+    
+    /* Hamburger Icon Transition */
+    #menu-btn i {
+      transition: transform 0.3s ease;
+    }
+    
+    #menu-btn.active i {
+      transform: rotate(90deg);
+    }
+    
+    /* Nav Link Hover Effects */
+    .hover\\:text-gray-900:hover {
+      transition: color 0.2s ease;
+    }
+    .image-hover-scale {
+      transition: transform 0.3s ease;
+    }
+   .image-hover-scale:hover {
+      transform: scale(1.05);
+    }
